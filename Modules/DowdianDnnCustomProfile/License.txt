@@ -1,3 +1,0 @@
-<p>DowdianDnnCustomProfile Modules Extension for DNN</p>
-<p>Dowdian <a href="https://dowdian.com" target="_blank">https://dowdian.com</a></p>
-<p>Your License Here</p>

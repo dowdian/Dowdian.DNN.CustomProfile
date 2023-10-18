@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dotnetnuke type="Package" version="6.0">
+  <packages>
+    <package name="Dowdian.Modules.CustomProfile" type="Module" version="01.00.00">
+      <friendlyName>CustomProfile Module</friendlyName>
+      <description>
+        <![CDATA[<p>A custom module for displaying and editing the DNN user profile.</p>]]>
+      </description>
+      <iconFile>DesktopModules/MVC/Dowdian.Modules.CustomProfile/Images/logo.png</iconFile>
+      <owner>
+        <name>Michael Dowd</name>
+        <organization>Dowdian</organization>
+        <url><![CDATA[<a href="https://dowdian.com" target="_blank">https://dowdian.com</a>]]></url>
+        <email><![CDATA[<a href="mailto:michael.dowd@dowdian.com" target="_blank">michael.dowd@dowdian.com</a>]]></email>
+      </owner>
+      <license src="License.txt" />
+      <releaseNotes src="ReleaseNotes.txt" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="coreversion">09.08.00</dependency>
+      </dependencies>
+      <components>
+        <component type="Script">
+          <scripts>
+            <basePath>DesktopModules\MVC\Dowdian.Modules.CustomProfile</basePath>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>01.00.00.SqlDataProvider</name>
+              <version>01.00.00</version>
+            </script>
+            <script type="UnInstall">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>Uninstall.SqlDataProvider</name>
+              <version>01.00.00</version>
+            </script>
+          </scripts>
+        </component>
+
+        <component type="Module">
+          <desktopModule>
+            <moduleName>CustomProfile Module</moduleName>
+            <foldername>Dowdian.Modules.CustomProfile</foldername>
+            <businessControllerClass>Dowdian.Modules.CustomProfile.Components.CustomProfileController, Dowdian.Modules.CustomProfile</businessControllerClass>
+            <supportedFeatures />
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>CustomProfile Module</friendlyName>
+                <defaultCacheTime>0</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>Dowdian.Modules.CustomProfile.Controllers/Example/Index.mvc</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>Edit</controlKey>
+                    <controlSrc>Dowdian.Modules.CustomProfile.Controllers/Example/Edit.mvc</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>Edit CustomProfile Content</controlTitle>
+                    <controlType>Edit</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                    <supportsPopUps>True</supportsPopUps>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>Settings</controlKey>
+                    <controlSrc>Dowdian.Modules.CustomProfile.Controllers/Settings/Settings.mvc</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>CustomProfile Settings</controlTitle>
+                    <controlType>Edit</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+          <eventMessage>
+            <processorType>DotNetNuke.Entities.Modules.EventMessageProcessor, DotNetNuke</processorType>
+            <processorCommand>UpgradeModule</processorCommand>
+            <attributes>
+              <businessControllerClass>Dowdian.Modules.CustomProfile.Components.CustomProfileController, Dowdian.Modules.CustomProfile</businessControllerClass>
+              <desktopModuleID>[DESKTOPMODULEID]</desktopModuleID>
+              <upgradeVersionsList>01.00.00</upgradeVersionsList>
+            </attributes>
+          </eventMessage>
+        </component>
+
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <name>Dowdian.Modules.CustomProfile.dll</name>
+              <path>bin</path>
+              <version>01.00.00</version>
+            </assembly>
+          </assemblies>
+        </component>
+
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules/MVC/Dowdian.Modules.CustomProfile</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

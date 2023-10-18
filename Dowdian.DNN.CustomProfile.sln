@@ -34,7 +34,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Skins", "Skins", "{EAE79EDB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Viewsets", "Viewsets", "{C5228275-B3D3-4550-A755-98F70CDCEA69}"
 EndProject
-Project("{fae04ec0-301f-11d3-bf4b-00c04f79efbc}") = "Dowdian.Modules.DowdianDnnCustomProfile", "Modules\DowdianDnnCustomProfile\Dowdian.Modules.DowdianDnnCustomProfile.csproj", "{56E36EC0-3EE2-4629-9364-918E9A3DC235}"
+Project("{fae04ec0-301f-11d3-bf4b-00c04f79efbc}") = "Dowdian.Modules.CustomProfile", "Modules\CustomProfile\Dowdian.Modules.CustomProfile.csproj", "{9824FB4C-9E06-455D-A24C-F801DEA27011}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,18 +42,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{56E36EC0-3EE2-4629-9364-918E9A3DC235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{56E36EC0-3EE2-4629-9364-918E9A3DC235}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{56E36EC0-3EE2-4629-9364-918E9A3DC235}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{56E36EC0-3EE2-4629-9364-918E9A3DC235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9824FB4C-9E06-455D-A24C-F801DEA27011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9824FB4C-9E06-455D-A24C-F801DEA27011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9824FB4C-9E06-455D-A24C-F801DEA27011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9824FB4C-9E06-455D-A24C-F801DEA27011}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {de785a2e-7d72-4e8d-9c86-b8ad931c4848}
+		SolutionGuid = {bbcc9dac-f325-4f90-911f-11a10727a7a4}
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{56E36EC0-3EE2-4629-9364-918E9A3DC235} = {70FB7EDF-2E12-405F-B9CD-8A437E96FB11}
+		{9824FB4C-9E06-455D-A24C-F801DEA27011} = {70FB7EDF-2E12-405F-B9CD-8A437E96FB11}
 	EndGlobalSection
 EndGlobal

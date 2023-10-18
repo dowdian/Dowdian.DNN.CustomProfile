@@ -1,0 +1,17 @@
+/*
+
+UNINSTALL SQL PROVIDER SCRIPT
+
+CustomProfile Extension for DNN
+
+*/
+
+IF NOT OBJECT_ID('{databaseOwner}[{objectQualifier}ddn_Example]') IS NULL
+    DROP TABLE {databaseOwner}[{objectQualifier}ddn_Example];
+GO
+
+/*
+
+END OF FILE
+
+*/
