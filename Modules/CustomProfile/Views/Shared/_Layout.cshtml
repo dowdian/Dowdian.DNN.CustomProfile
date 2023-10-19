@@ -1,3 +1,31 @@
+@inherits DotNetNuke.Web.Mvc.Framework.DnnWebViewPage
+@using DotNetNuke.Web.Client.ClientResourceManagement;
+@using DotNetNuke.Framework;
+@{
+    //Standard DNN inclusions
+    ClientResourceManager.RegisterScript(Dnn.DnnPage, "~/js/dnn.js?cdv=41", 1);
+    ClientResourceManager.RegisterScript(Dnn.DnnPage, "~/Resources/Shared/Scripts/dnn.jquery.js?cdv=41", 2);
+    ClientResourceManager.RegisterScript(Dnn.DnnPage, "~/js/dnn.servicesframework.js?cdv=41", 2);
+
+    //jQuery Validation
+    ClientResourceManager.RegisterScript(Dnn.DnnPage, "~/DesktopModules/MVC/Dowdian.Modules.ClientPortal/UserControls/Validation/jquery.validate.min.js", 101);
+    ClientResourceManager.RegisterScript(Dnn.DnnPage, "~/DesktopModules/MVC/Dowdian.Modules.ClientPortal/UserControls/Validation/jquery.validate.unobtrusive.min.js", 101);
+    ClientResourceManager.RegisterScript(Dnn.DnnPage, "~/DesktopModules/MVC/Dowdian.Modules.ClientPortal/UserControls/Validation/jquery.validate.overrides.js", 101);
+
+    var userInfo = Dowdian.Modules.CustomProfile.Repositories.Dnn.DnnUserRepository.Instance.GetCurrentUser();
+    var IsLoggedIn = userInfo.UserID != -1;
+    string controller = "";
+
+    if (ViewContext.RouteData.Values["controller"] != null)
+    {
+        controller = ViewContext.RouteData.Values["controller"].ToString();
+    }
+
+    ServicesFramework.Instance.RequestAjaxScriptSupport();
+    ServicesFramework.Instance.RequestAjaxAntiForgerySupport();
+}
+
 <div id="mvcContainer-@Dnn.ActiveModule.ModuleID">
+    @Html.AntiForgeryToken()
     @RenderBody()
 </div>

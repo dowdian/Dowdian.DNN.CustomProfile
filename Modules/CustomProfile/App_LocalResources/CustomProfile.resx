@@ -10,7 +10,7 @@
     various data types are done through the TypeConverter classes 
     associated with the data types.
     
-    Example:
+    Exampl e:
     
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
@@ -117,22 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddItem.Text" xml:space="preserve">
+    <value>Add New Item</value>
+  </data>
   <data name="BasicSettings.Text" xml:space="preserve">
     <value>CustomProfile Item Basic Settings</value>
   </data>
-  <data name="ControlTitle_settings.Text" xml:space="preserve">
-    <value>CustomProfile Settings</value>
+  <data name="Cancel.Text" xml:space="preserve">
+    <value>Cancel</value>
   </data>
-  <data name="lblSetting1" xml:space="preserve">
-    <value>Setting One</value>
+  <data name="CollapseAll.Text" xml:space="preserve">
+    <value>Collapse All</value>
   </data>
-  <data name="lblSetting1.Help" xml:space="preserve">
-    <value>Put your value for Setting 1 here.</value>
+  <data name="DeleteItem.Text" xml:space="preserve">
+    <value>Delete</value>
   </data>
-  <data name="lblSetting2" xml:space="preserve">
-    <value>Setting Two</value>
+  <data name="EditItem.Text" xml:space="preserve">
+    <value>Edit</value>
   </data>
-  <data name="lblSetting2.Help" xml:space="preserve">
-    <value>Put your value for Setting 2 here.</value>
+  <data name="ExpandAll.Text" xml:space="preserve">
+    <value>Expand All</value>
+  </data>
+  <data name="lblDescription.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lblName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Submit.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="NoItems.Text" xml:space="preserve">
+    <value>No items defined.</value>
   </data>
 </root>

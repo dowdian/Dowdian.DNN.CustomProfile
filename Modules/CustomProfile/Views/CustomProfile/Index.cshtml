@@ -1,0 +1,18 @@
+@inherits DotNetNuke.Web.Mvc.Framework.DnnWebViewPage<DotNetNuke.Entities.Profile.ProfilePropertyDefinitionCollection>
+
+@using System.Text.RegularExpressions
+@using DotNetNuke.Web.Mvc.Helpers
+@using DotNetNuke.Entities.Profile
+
+<div id="Items-@Dnn.ModuleContext.ModuleId">
+    <ul class="tm_tl">
+        @foreach (ProfilePropertyDefinition item in Model)
+        {
+            <li class="tm_t">
+                <h3>@item.PropertyName</h3>
+                <div class="tm_td">@item.PropertyValue</div>
+            </li>
+
+        }
+    </ul>
+</div> 
